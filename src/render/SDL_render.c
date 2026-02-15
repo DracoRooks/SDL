@@ -4045,6 +4045,18 @@ bool SDL_RenderFillRects(SDL_Renderer *renderer, const SDL_FRect *rects, int cou
     return result;
 }
 
+bool SDL_RenderCircle(SDL_Renderer *renderer, const SDL_FCircle *circle)
+{
+    SDL_Log("SDL_RenderCircle");
+    return false;
+}
+
+bool SDL_RenderFillCircle(SDL_Renderer *renderer, const SDL_FCircle *circle)
+{
+    SDL_Log("SDL_RenderFillCircle");
+    return false;
+}
+
 static bool SDL_RenderTextureInternal(SDL_Renderer *renderer, SDL_Texture *texture, const SDL_FRect *srcrect, const SDL_FRect *dstrect)
 {
     const SDL_RenderViewState *view = renderer->view;
