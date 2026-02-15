@@ -122,7 +122,8 @@ typedef struct SDL_FRect
  * coordinates of the center of the circle. The property `r` represents the
  * radius of the circle
  */
-typedef struct {
+typedef struct SDL_FCircle
+{
     float x;
     float y;
     float r;

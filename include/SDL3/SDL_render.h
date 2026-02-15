@@ -2254,6 +2254,8 @@ extern SDL_DECLSPEC bool SDLCALL SDL_RenderFillRects(SDL_Renderer *renderer, con
  *
  * \param renderer the renderer which should draw the circle.
  * \param circle a pointer to the destination circle.
+ * \returns true on success or false on failure; call SDL_GetError() for more
+ *          information.
  *
  * \threadsafety This function should only be called on the main thread.
  */
