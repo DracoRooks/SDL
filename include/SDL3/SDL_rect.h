@@ -114,6 +114,19 @@ typedef struct SDL_FRect
     float h;
 } SDL_FRect;
 
+/**
+ * A circle stored using floating point values.
+ *
+ * The origin of the coordinate space is in top-left, with increasing
+ * values moving down and right. The properties `x` and `y` represent the
+ * coordinates of the center of the circle. The property `r` represents the
+ * radius of the circle
+ */
+typedef struct {
+    float x;
+    float y;
+    float r;
+} SDL_FCircle;
 
 /**
  * Convert an SDL_Rect to SDL_FRect

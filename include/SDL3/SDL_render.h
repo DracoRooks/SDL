@@ -2250,6 +2250,16 @@ extern SDL_DECLSPEC bool SDLCALL SDL_RenderFillRect(SDL_Renderer *renderer, cons
 extern SDL_DECLSPEC bool SDLCALL SDL_RenderFillRects(SDL_Renderer *renderer, const SDL_FRect *rects, int count);
 
 /**
+ * Draw a circle on the current rendering target with subpixel precision.
+ *
+ * \param renderer the renderer which should draw the circle.
+ * \param circle a pointer to the destination circle.
+ *
+ * \threadsafety This function should only be called on the main thread.
+ */
+extern SDL_DECLSPEC bool SDLCALL SDL_RenderCircle(SDL_Renderer *renderer, const SDL_FCircle *circle);
+
+/**
  * Copy a portion of the texture to the current rendering target at subpixel
  * precision.
  *
